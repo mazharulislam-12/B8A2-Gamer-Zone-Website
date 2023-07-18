@@ -8,8 +8,14 @@
         flex-direction: column;
         gap: 20px;
     }
-    
-}
+    .banner-container{
+        flex-direction: column-reverse;
+    }
+   
+    /* .text-and-icon div{
+        margin-left: 20px;
+    }
+} */
 
 
 
