@@ -177,3 +177,28 @@ nav {
 
 }
 /* online game section end */
+
+/* play instantly section start */
+#play-instantly{
+ 
+}
+.play-instantly-container{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+  text-align: center;
+}
+
+.play-instantly-content{
+  margin: 100px;
+}
+.play-instantly-image{
+  position: relative;
+  bottom: 200px;
+  right: 50px;
+}
+.play-instantly-main-image{
+  width: 90%;
+}
+/* play instantly section end */
