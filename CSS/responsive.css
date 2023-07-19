@@ -4,6 +4,10 @@
         margin: 0 auto;
         gap: 20px;
     }
+   .footer-item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   }
     nav ul{
         flex-direction: column;
         gap: 20px;
@@ -37,11 +41,13 @@
    .button-card{
     margin: auto;
    }
+    
+   }
    
    
    
    
-}
+
 
 
 
@@ -66,5 +72,10 @@
     }
     .play-instantly-container{
         flex-direction: column;
+       }
+       
+       .footer-item {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
        }
 }

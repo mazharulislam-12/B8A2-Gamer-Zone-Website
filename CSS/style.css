@@ -177,7 +177,33 @@ nav {
   display: flex;
   justify-content: center;
   gap: 20px;
+  position: relative;
+  cursor: pointer;
   /* margin: 0 auto; */
+}
+.online-game-container:hover .text-and-icon{
+  visibility: visible;
+}
+.text-and-icon{
+  font-size: 2rem;
+  position: absolute;
+  top: 0;
+  left: 200;
+  text-align: center;
+  border-radius: 16px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+  width: 350px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  opacity: 0.8;
+  visibility: hidden;
+  /* border-radius: 10px; */
+}
+.text-and-icon p{
+  margin-bottom: 1.2rem;
 }
 /* online game section end */
 
@@ -198,10 +224,13 @@ nav {
 .play-instantly-image {
   position: relative;
   bottom: 200px;
-  right: 50px;
+  right: 300px;
 }
 .play-instantly-main-image {
   width: 90%;
+}
+.play-instantly-span{
+  color: #0B0223;
 }
 /* play instantly section end */
 
@@ -210,22 +239,25 @@ nav {
   background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
 }
 .button-card-container {
-  max-width: 1000px;
+  max-width: 1900px;
+  width: 100%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+
 }
 .button-card {
   display: flex;
   align-items: center;
+  margin: 0 auto;
+  text-align: center;
   border-radius: 50px;
   background: #fff;
-  /* width: 243px;
-  height: 80px; */
   padding: 5px 10px;
   margin-right: 15px;
   margin-bottom: 15px;
   transition: 0.5s;
+
 }
 .button-card:hover {
   border: 1px solid red;
@@ -241,12 +273,14 @@ nav {
   font-weight: 600;
 }
 
+
+
 /* button card section card end */
 
 /* footer section start */
 footer{
-  width: auto;
-  height: 400px;
+  max-width: 1900px;
+  height: 500px;
  margin: 0 auto;
   background: #0B0223;
 }
@@ -260,10 +294,18 @@ footer{
 .footer-logo h2{
   color: white;
 }
-footer ul{
-  display: flex;
-  justify-content: center;
+.footer-item{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  width: 800px;
+  text-align: center;
+  margin: 0 auto;
+  
 }
+.footer-item p{
+  color: white;
+}
+
 footer li{
   list-style: none;
   margin-right: 15px;
@@ -274,11 +316,13 @@ footer li a{
   color: white;
 }
 .footer-font-aswome-icon{
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin: 0 auto;
+  width: 700px;
 }
 .footer-font-aswome-icon i{
-  margin-right: 15px;
+  margin-right: 20px;
   margin-top: 15px;
   font-size: 30px;
   color: white;
@@ -287,13 +331,79 @@ footer li a{
   text-decoration: none;
 }
 .footer-teams-conditaion{
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 auto;
   color: rgba(255, 255, 255, 0.60);
+  width: 700px;
 }
 .footer-copyright{
   margin-top: 15px;
   text-align: center;
   color: rgba(255, 255, 255, 0.60);
 }
-/* footer section end
+/* footer section end */
+
+@media screen and (max-width: 576px) {
+  .button-card-container,
+  .footer-item,
+  .footer-font-aswome-icon
+  
+  {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* gap: 20px; */
+    align-items: center;
+    width: 300px;
+    margin: 0 auto;
+
+  }
+  .footer-teams-conditaion{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    width: 300px;
+  }
+  .footer-copyright{
+    text-align: center;
+  }
+  .button-card-container{
+    margin-right: 200px;
+  }
+  .button-card{
+    width: 125px;
+  }
+  
+}
+
+@media screen and (min-width:577px) and (max-width:960px) {
+  .button-card-container,
+  .footer-item,
+  .footer-font-aswome-icon
+  
+  {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    width: 300px;
+    align-items: center;
+
+  }
+  .footer-teams-conditaion{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    width: 300px;
+  }
+  .footer-copyright{
+    text-align: center;
+  }
+ .button-card-container{
+  justify-content: center;
+ }
+  .button-card{
+    width: 150px;
+  }
+   
+}
+
