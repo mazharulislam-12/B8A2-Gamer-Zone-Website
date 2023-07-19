@@ -28,6 +28,15 @@
    .play-instantly-container{
     flex-direction: column;
    }
+   .button-card-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: -150px;
+
+   }
+   .button-card{
+    margin: auto;
+   }
    
    
    
