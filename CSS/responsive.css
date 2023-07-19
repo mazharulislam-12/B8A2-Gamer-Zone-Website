@@ -8,13 +8,19 @@
         flex-direction: column;
         gap: 20px;
     }
-    .banner-container{
+    .banner-container
+    {
         flex-direction: column-reverse;
     }
-    .banner-image img{
-        width: 80%;
-    }
-   
+   .gamer-container{
+    flex-direction: column;
+   }
+   .gamer-image img{
+    width: 100%;
+   }
+   .gamer-content{
+    margin-right: 50px;
+   }
    
    
 }
@@ -32,6 +38,9 @@
         flex-direction: column-reverse;
         gap: 200px;
     }
-    
+    .gamer-container{
+        flex-direction: column;
+       align-items: right;
+       }
     
 }
