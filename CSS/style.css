@@ -253,7 +253,7 @@ footer{
 .footer-logo{
   display: flex;
   justify-content: center;
-  padding: 70px;
+  padding: 50px;
   
 }
 
@@ -272,6 +272,19 @@ footer li{
 footer li a{
   text-decoration: none;
   color: white;
+}
+.footer-font-aswome-icon{
+  display: flex;
+  justify-content: center;
+}
+.footer-font-aswome-icon i{
+  margin-right: 15px;
+  margin-top: 15px;
+  font-size: 30px;
+  color: white;
+}
+.font-awesome-icon a{
+  text-decoration: none;
 }
 .footer-teams-conditaion{
   display: flex;
